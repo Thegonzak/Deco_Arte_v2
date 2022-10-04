@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/fondo"
+
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/presentacion1"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="@font/kavoon"
+            android:gravity="center"
+            android:text="@string/registro" />
+
+        <TextView
+            android:id="@+id/obligacion"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="15sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/obligación"
+            android:textColor="@color/white"
+
+            android:textStyle="italic"
+
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/cedulaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawableStart="@drawable/ic_cedula_png"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/cedula"
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/nombreText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawableStart="@drawable/ic_usuario_png"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/Nombres"
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/apellidosText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawableStart="@drawable/ic_usuario_png"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/Apellidos"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <Spinner
+                    android:id="@+id/ciudadSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bordes_redondos_register"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/direccionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawableStart="@drawable/ic_direccion_png"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/domicilio"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/fechaNac"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawableStart="@drawable/ic_fecha_png"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/fechaNac"
+                    android:inputType="date"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/telefonoPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawableStart="@drawable/ic_telefono_png"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/telefono"
+                    android:inputType="phone"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRegresar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/botones_redondos_regis"
+                        android:text="@string/regresar"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/botones_redondos"
+                        android:text="@string/guardar"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

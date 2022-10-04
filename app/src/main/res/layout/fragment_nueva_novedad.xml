@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".NuevaNovedad"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/presentacion1"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:fontFamily="@font/kavoon"
+            android:gravity="center"
+            android:text="@string/nueva_novedad"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/obligacion"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="15sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/obligación"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/descripcion"
+                    android:inputType="text|textMultiLine"
+                    android:padding="10sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+
+                <EditText
+                    android:id="@+id/fechaInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/fechaInicio"
+                    android:inputType="date"
+                    android:padding="10sp"
+
+
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/fechaFin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/bordes_redondos_register"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/fechaFin"
+                    android:inputType="date"
+                    android:padding="10sp"
+
+
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+
+                <CheckBox
+                    android:id="@+id/actvivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actvivo" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRegresar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/botones_redondos_regis"
+                        android:text="@string/regresar"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/botones_redondos"
+                        android:text="@string/guardar"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

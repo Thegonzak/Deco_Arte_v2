@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inicioMenu"
+        android:icon="@drawable/ic_inicio_png"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/explorarMenu"
+        android:icon="@drawable/ic_explorar_png"
+        android:title="Explorar" />
+    <item
+        android:id="@+id/aR"
+        android:icon="@drawable/ic_realidad_png"
+        android:title="AR" />
+    <item
+        android:id="@+id/contactarMenu"
+        android:icon="@drawable/ic_contactar_png"
+        android:title="Contactar" />
+
+    <item
+        android:id="@+id/cuentaMenu"
+        android:icon="@drawable/ic_cuenta_png"
+        android:title="Cuenta" />
+</menu>

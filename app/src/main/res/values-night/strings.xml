@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="Cerrar_Session">Cerrar Session</string>
+    <string name="Proveedor">Proveedor</string>
+    <string name="Nombres">Nombres</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="fechaNac">Fecha de Nacimiento</string>
+    <string name="telefono">Telefono</string>
+    <string name="regresar">Regresar</string>
+    <string name="guardar">Guardar</string>
+    <string name="repetirClave">Repetir Contraseña</string>
+    <string name="cedula">Cédula</string>
+    <string name="textview">TextView</string>
+    <string name="Presentación">presentación</string>
+    <string name="Inicio">INICIAR SESSION</string>
+    <string name="Olvidar">Olvidaste tu contraseña?</string>
+    <string name="direccion">"Direción Domiciliaria "</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="registro">Registrarse</string>
+    <string name="Novedades">Novedades</string>
+</resources>

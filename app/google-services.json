@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "822389760417",
+    "firebase_url": "https://decoartedb-default-rtdb.firebaseio.com",
+    "project_id": "decoartedb",
+    "storage_bucket": "decoartedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822389760417:android:364fd86f7ca4caa56c2be0",
+        "android_client_info": {
+          "package_name": "com.ksaucedo.deco_arte_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822389760417-8a6841q0kag3em6qmo4tbij33q8f0t52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ksaucedo.deco_arte_v2",
+            "certificate_hash": "3d3709ddaf72a6e071dab38d73d09b5aab4a1347"
+          }
+        },
+        {
+          "client_id": "822389760417-8bn4tle3re0arl0cnkqd7s38kjl7cbum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzZZgULLqAX1RnlSz9SGlujpT617_Owa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822389760417-8bn4tle3re0arl0cnkqd7s38kjl7cbum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
